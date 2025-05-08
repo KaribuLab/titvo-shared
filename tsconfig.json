@@ -13,7 +13,7 @@
       "strictPropertyInitialization": false,
       "skipLibCheck": true,
       "paths": {
-        "@/*": [
+        "@shared/*": [
           "./src/*"
         ]
       }
