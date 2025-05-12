@@ -1,6 +1,5 @@
 export interface GetSignedUrlInput {
   containerName: string
-  inputPath: string
   filePath: string
   contentType: string
   expiresIn: number
