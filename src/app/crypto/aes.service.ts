@@ -1,6 +1,6 @@
 import { createCipheriv, createDecipheriv, CipherKey } from 'crypto'
 import { Inject, Injectable } from '@nestjs/common'
-import { SecretService } from '@titvo/shared'
+import { SecretService } from '../../core/outputs/secret.service'
 
 export const ENCRYPTION_KEY_NAME_PROPERTY = 'ENCRYPTION_KEY_NAME'
 @Injectable()
