@@ -1,0 +1,55 @@
+{
+  "key_base64": "MTIzNDU2Nzg5MDEyMzQ1Njc4OTAxMjM0NTY3ODkwMTI=",
+  "vectors": [
+    {
+      "name": "empty",
+      "plaintext": "",
+      "expected_ciphertext_base64": "QZirQIFIfCE6HIK8QErXyA=="
+    },
+    {
+      "name": "len_1",
+      "plaintext": "a",
+      "expected_ciphertext_base64": "8NodEJVk4kEBCdPeOwLFtA=="
+    },
+    {
+      "name": "len_15",
+      "plaintext": "aaaaaaaaaaaaaaa",
+      "expected_ciphertext_base64": "UOFFtOKgJNWmjUfF6KQP2Q=="
+    },
+    {
+      "name": "len_16",
+      "plaintext": "aaaaaaaaaaaaaaaa",
+      "expected_ciphertext_base64": "GhzJPJvYkGFWe0+vbsUYikGYq0CBSHwhOhyCvEBK18g="
+    },
+    {
+      "name": "len_17",
+      "plaintext": "aaaaaaaaaaaaaaaaa",
+      "expected_ciphertext_base64": "GhzJPJvYkGFWe0+vbsUYivDaHRCVZOJBAQnT3jsCxbQ="
+    },
+    {
+      "name": "len_31",
+      "plaintext": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_ciphertext_base64": "GhzJPJvYkGFWe0+vbsUYilDhRbTioCTVpo1HxeikD9k="
+    },
+    {
+      "name": "len_32",
+      "plaintext": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_ciphertext_base64": "GhzJPJvYkGFWe0+vbsUYihocyTyb2JBhVntPr27FGIpBmKtAgUh8ITocgrxAStfI"
+    },
+    {
+      "name": "len_33",
+      "plaintext": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+      "expected_ciphertext_base64": "GhzJPJvYkGFWe0+vbsUYihocyTyb2JBhVntPr27FGIrw2h0QlWTiQQEJ0947AsW0"
+    },
+    {
+      "name": "multibyte_utf8",
+      "plaintext": "héllo wörld 日本語 emoji 🚀",
+      "expected_ciphertext_base64": "k5yqxBoKbOLgPB7znHJw/a6frd++NfnXQQL1x1YhYv5piskhKOQSapvCpABbGfjr"
+    },
+    {
+      "name": "repeated_block",
+      "plaintext": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+      "expected_ciphertext_base64": "uyVtlZ4LdmZhPck45FCn5rslbZWeC3ZmYT3JOORQp+ZBmKtAgUh8ITocgrxAStfI"
+    }
+  ]
+}
